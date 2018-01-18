@@ -9,12 +9,9 @@
   "image": "aherbjornsen/{arch}-nginx-proxy",
   "options": {
     "vhosts":[
-      {
-        "vhost": "hass",
-         "port": "8123",
-         "certname": "hass",
-         "remote_ssl": true
-      }
+      {"vhost": "homeassistant.domain.tld",
+       "port": "8123",
+       "default_server": true}
     ]
   },
   "schema": {
