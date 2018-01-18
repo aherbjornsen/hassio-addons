@@ -1,6 +1,6 @@
 {
   "name": "Nginx Proxy",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "slug": "nginx_proxy",
   "description": "Nginx Proxy for multiple VHOSTS",
   "url": "https://github.com/aherbjornsen/hassio-addons/tree/master/nginx_proxy",
@@ -9,9 +9,12 @@
   "image": "bestlibre/{arch}-nginx-proxy",
   "options": {
     "vhosts":[
-      {"vhost": "homeassistant.domain.tld",
+      {
+       "vhost": "hass",
        "port": "8123",
-       "default_server": true}
+       "certname": "hass",
+       "remote_ssl": true
+      }
     ]
   },
   "schema": {
