@@ -9,12 +9,9 @@
   "image": "bestlibre/{arch}-nginx-proxy",
   "options": {
     "vhosts":[
-      {
-       "vhost": "hass",
+      {"vhost": "homeassistant.domain.tld",
        "port": "8123",
-       "certname": "hass",
-       "remote_ssl": true
-      }
+       "default_server": true}
     ]
   },
   "schema": {
