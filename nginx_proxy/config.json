@@ -6,12 +6,15 @@
   "url": "https://github.com/aherbjornsen/hassio-addons/tree/master/nginx_proxy",
   "startup": "system",
   "boot": "auto",
-  "image": "bestlibre/{arch}-nginx-proxy",
+  "image": "aherbjornsen/{arch}-nginx-proxy",
   "options": {
     "vhosts":[
-      {"vhost": "homeassistant.domain.tld",
-       "port": "8123",
-       "default_server": true}
+      {
+        "vhost": "hass",
+         "port": "8123",
+         "certname": "hass",
+         "remote_ssl": true
+      }
     ]
   },
   "schema": {
