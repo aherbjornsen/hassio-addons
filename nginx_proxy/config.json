@@ -3,7 +3,7 @@
   "version": "0.1.9",
   "slug": "nginx_proxy",
   "description": "Nginx Proxy for multiple VHOSTS",
-  "url": "https://github.com/bestlibre/hassio-addons/tree/master/nginx_proxy",
+  "url": "https://github.com/aherbjornsen/hassio-addons/tree/master/nginx_proxy",
   "startup": "system",
   "boot": "auto",
   "image": "bestlibre/{arch}-nginx-proxy",
