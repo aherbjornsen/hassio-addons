@@ -66,7 +66,12 @@ server {
     {{/auth}}
 
     location / {
+    {{#remote_ssl}}
+        proxy_pass https://{{#remote}}{{remote}}{{/remote}}{{^remote}}172.17.0.1{{/remote}}:{{port}};
+    {{/remote_ssl}}
+    {{^remote_ssl}}
         proxy_pass http://{{#remote}}{{remote}}{{/remote}}{{^remote}}172.17.0.1{{/remote}}:{{port}};
+    {{/remote_ssl}}
     }
 }
 {{/vhosts}}
