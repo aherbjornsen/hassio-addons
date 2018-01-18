@@ -6,7 +6,7 @@
   "url": "https://github.com/aherbjornsen/hassio-addons/tree/master/nginx_proxy",
   "startup": "system",
   "boot": "auto",
-  "image": "aherbjornsen/{arch}-nginx-proxy",
+  "image": "bestlibre/{arch}-nginx-proxy",
   "options": {
     "vhosts":[
       {"vhost": "homeassistant.domain.tld",
